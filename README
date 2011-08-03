@@ -1,0 +1,22 @@
+Bus bot
+
+DESCRIPTION
+Busbot will read any tweets that mention the account @busbot1 and perform a 
+search to find the closest bus stop that will take the user to his destination.
+
+Input:
+    @busbot1 (street)/(cross street) (destination street)/dest. cross street)
+    @busbot1 (mercer)/(westlake ave n) (stone way n)/(n 38th)
+
+Output:
+    @busbot1 <bus number> <time> (street of bus stop)/(cross street)
+    @busbot1 (28) (12:10am) (dexter)/(roy)
+
+As of now, @busbot1 is able to parse the message and respond back to the user
+with the exact same message.
+
+TODO:
+- Consider if it's necessary to also output the stop to get off
+  - And if so, how far to walk? Multiple bus stops? How detailed should it be?
+- Learn the Google Maps API to see how hard/easy it is to make POSTs
+  - 
